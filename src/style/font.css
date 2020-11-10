@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Monda";
+  src: url("./../assets/font/monda.ttf");
+}
+
+@font-face {
+  font-family: "Zcool";
+  src: url("./../assets/font/zcool.ttf");
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1541787 */
+  src: url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.eot');
+  src: url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1541787_5m1rtt5vyqq.svg#iconfont') format('svg');
+}

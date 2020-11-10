@@ -1,0 +1,91 @@
+html {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0 !important;
+  font-family: $default-font-family;
+}
+
+.c-container {
+  width: $max-width;
+}
+
+.default-hover {
+  &:hover {
+    background-color: #deeafb !important;
+  }
+}
+
+.border-shadow {
+  box-shadow: $border-shadow;
+}
+
+.card {
+  box-shadow: $border-shadow;
+  color: #4a4a4a;
+  max-width: 100%;
+  border-radius: 3px;
+  position: relative;
+
+  &:hover {
+    background-color: #deeafb !important;
+  }
+}
+
+.small-card {
+  @extend .card;
+  width: 90%;
+  background: $default-background;
+  font-family: Monda;
+
+  .small-card-content {
+    padding: 21px;
+
+    .small-content-title {
+      color: #6a6a6a;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+// 设置滚动条的样式
+::-webkit-scrollbar {
+  width: 8px; /* 纵向滚动条*/
+  height: 8px; /* 横向滚动条 */
+  //background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background: #f2f2f2;
+  opacity: 0;
+  //background-color: #ccc;
+}
+
+/*定义滑块 内阴影*/
+::-webkit-scrollbar-thumb {
+  //border-radius: 10px;
+  border-radius: 6px;
+  opacity: 0;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  /*当焦点不在当前区域滑块的状态*/
+  border-radius: 0;
+}

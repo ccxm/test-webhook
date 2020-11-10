@@ -1,0 +1,47 @@
+.x-center {
+  display: flex;
+  justify-content: center;
+}
+
+.y-center {
+  display: flex;
+  align-items: center;
+}
+
+//垂直方向居中
+.yx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.xy-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.y-center__between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.y-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-both {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    /* height:0;和overflow:hidden;是为了解决IE兼容的问题 */
+    height: 0;
+    overflow: hidden;
+    /* visibility:hidden;是为了去除content中的文字 */
+    visibility: hidden;
+  }
+}
